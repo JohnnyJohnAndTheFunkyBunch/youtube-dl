@@ -105,6 +105,7 @@ from .bilibili import (
     BiliBiliBangumiIE,
     BilibiliAudioIE,
     BilibiliAudioAlbumIE,
+    BiliBiliPlayerIE,
 )
 from .biobiochiletv import BioBioChileTVIE
 from .bitchute import (
@@ -497,7 +498,6 @@ from .jeuxvideo import JeuxVideoIE
 from .jove import JoveIE
 from .joj import JojIE
 from .jwplatform import JWPlatformIE
-from .jpopsukitv import JpopsukiIE
 from .kakao import KakaoIE
 from .kaltura import KalturaIE
 from .kanalplay import KanalPlayIE
@@ -636,7 +636,10 @@ from .mixcloud import (
 from .mlb import MLBIE
 from .mnet import MnetIE
 from .moevideo import MoeVideoIE
-from .mofosex import MofosexIE
+from .mofosex import (
+    MofosexIE,
+    MofosexEmbedIE,
+)
 from .mojvideo import MojvideoIE
 from .morningstar import MorningstarIE
 from .motherless import (
@@ -801,6 +804,16 @@ from .orf import (
     ORFFM4IE,
     ORFFM4StoryIE,
     ORFOE1IE,
+    ORFOE3IE,
+    ORFNOEIE,
+    ORFWIEIE,
+    ORFBGLIE,
+    ORFOOEIE,
+    ORFSTMIE,
+    ORFKTNIE,
+    ORFSBGIE,
+    ORFTIRIE,
+    ORFVBGIE,
     ORFIPTVIE,
 )
 from .outsidetv import OutsideTVIE
@@ -905,7 +918,9 @@ from .rbmaradio import RBMARadioIE
 from .rds import RDSIE
 from .redbulltv import (
     RedBullTVIE,
+    RedBullEmbedIE,
     RedBullTVRrnContentIE,
+    RedBullIE,
 )
 from .reddit import (
     RedditIE,
@@ -1216,14 +1231,11 @@ from .twentymin import TwentyMinutenIE
 from .twentythreevideo import TwentyThreeVideoIE
 from .twitcasting import TwitCastingIE
 from .twitch import (
-    TwitchVideoIE,
-    TwitchChapterIE,
     TwitchVodIE,
-    TwitchProfileIE,
-    TwitchAllVideosIE,
-    TwitchUploadsIE,
-    TwitchPastBroadcastsIE,
-    TwitchHighlightsIE,
+    TwitchCollectionIE,
+    TwitchVideosIE,
+    TwitchVideosClipsIE,
+    TwitchVideosCollectionsIE,
     TwitchStreamIE,
     TwitchClipsIE,
 )
